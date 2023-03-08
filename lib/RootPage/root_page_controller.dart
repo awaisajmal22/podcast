@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
+import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:podcast/CategoryModule/ViewController/category_view_controller.dart';
 import 'package:podcast/FavModule/ViewController/fav_view_controller.dart';
 import 'package:podcast/Home/ViewController/home_view_controller.dart';

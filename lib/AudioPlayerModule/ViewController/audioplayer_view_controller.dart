@@ -129,6 +129,9 @@ class _AudioPlayerViewControllerState extends State<AudioPlayerViewController> w
               padding: const EdgeInsets.symmetric(horizontal: 10),
               child: musicTitle(name: widget.name),
             ),
+            SizedBox(
+              height: 10,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10),
               child: ValueListenableBuilder<ProgressBarState>(

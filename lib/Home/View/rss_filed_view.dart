@@ -88,7 +88,7 @@ class _RssFiledViewState extends State<RssFiledView> {
               const SizedBox(
                 width: 10,
               ),
-              Expanded(child: AppText.customText(title: widget.rssItem.title!)),
+              Expanded(child: AppText.customText(title: widget.rssItem.title!, overflow: TextOverflow.ellipsis)),
               InkWell(
                   onTap: () async {
                     if (fav) {

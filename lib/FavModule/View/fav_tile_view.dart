@@ -66,7 +66,7 @@ class _FavTileViewState extends State<FavTileView> {
                     borderRadius: BorderRadius.circular(12)),
               ),
               const    SizedBox(width: 10,),
-              Expanded(child: AppText.customText(title: widget.name)),
+              Expanded(child: AppText.customText(title: widget.name, overflow: TextOverflow.ellipsis)),
               InkWell(
                   onTap: () async {
                     if (fav) {

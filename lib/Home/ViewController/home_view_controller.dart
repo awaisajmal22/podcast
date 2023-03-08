@@ -86,6 +86,8 @@ class _HomeViewControllerState extends State<HomeViewController> {
                               // snapshot.data![ind].data.isEmpty?SizedBox(child: Text("No Found"),):
                                SizedBox(
 
+                                height: 200,
+
                                 child: ListView.builder(
                                   itemCount: snapshot.data![ind].data.length,
                                   scrollDirection:
@@ -112,7 +114,6 @@ class _HomeViewControllerState extends State<HomeViewController> {
                                         ));
                                   },
                                 ),
-                                height: 200,
                               ),
                             ],
                           );

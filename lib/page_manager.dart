@@ -20,7 +20,14 @@ class PageManager {
 
   void _init({required String urlBy}) async {
     _audioPlayer = AudioPlayer();
-    await _audioPlayer.setUrl(urlBy);
+    try{
+      await _audioPlayer.setUrl(urlBy, initialPosition: Duration.zero);
+    } on PlayerInterruptedException catch (e){
+      print(e.toString());
+
+    }
+    
+
 
     _audioPlayer.playerStateStream.listen((playerState) {
       final isPlaying = playerState.playing;
